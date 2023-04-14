@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { collections } from "./Layout";
+import { FC } from "react";
+import { collections } from "../types/collection";
 
 const Table: FC<{ rightCollection: collections[] }> = ({ rightCollection }) => {
   return (
