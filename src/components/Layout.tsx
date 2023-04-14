@@ -51,7 +51,7 @@ const Layout: FC = () => {
   return (
     <>
       <section className=' min-h-full flex items-center gap-3 flex-wrap max-w-7xl mx-auto justify-center'>
-        <div className='list_of_dragable_items w-full flex items-center justify-center gap-4'>
+        <div className='list_of_dragable_items w-full flex items-center justify-center flex-wrap gap-4'>
           {collections.map((e) => {
             return (
               <div className='' key={e.id}>
