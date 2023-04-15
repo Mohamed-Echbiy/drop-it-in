@@ -84,9 +84,7 @@ const RightArea: FC<dataTypes> = ({
       }
     } else if (!!componentRight.length) {
       // this else to prevent item from being duplicated
-      if (type === "input" || type === "checkbox") {
-        controleInput_Check(type, id);
-      }
+
       toast.info("item has already been added", {
         autoClose: 1500,
         theme: "dark",

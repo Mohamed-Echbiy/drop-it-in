@@ -1,7 +1,11 @@
 import { FC } from "react";
 import { collections } from "../types/collection";
 
-const Table: FC<{ rightCollection: collections[] }> = ({ rightCollection }) => {
+const Table: FC<{ rightCollection: collections[]; value: string }> = ({
+  rightCollection,
+  value,
+}) => {
+  console.log(value);
   return (
     <div className='overflow-x-auto w-full mt-8 max-w-[520px] bg-white z-[2] p-8 rounded'>
       <h3 className='text-2xl text-center capitalize pb-2 mb-4 border-b max-w-fit mx-auto border-blue-600'>

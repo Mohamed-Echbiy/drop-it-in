@@ -60,7 +60,6 @@ const LeftArea: FC<dataTypes> = ({
     }),
     [collections, inputValue, checkboxValue, leftArea, rightArea]
   );
-  console.log(leftArea, "I am left", rightArea, "I am right area");
   const DropFc = (id: number, type?: string) => {
     const component = collections.filter((collection) => collection.id === id);
     // here we get the item from the array that we dragging
@@ -84,9 +83,7 @@ const LeftArea: FC<dataTypes> = ({
       }
     } else if (!!componentLeft) {
       // this to prevent duplicating item
-      if (type === "input" || type === "checkbox") {
-        controleInput_Check(type, id);
-      }
+
       toast.info("item is already here", {
         autoClose: 1500,
         theme: "dark",

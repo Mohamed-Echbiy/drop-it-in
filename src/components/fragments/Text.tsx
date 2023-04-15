@@ -15,6 +15,7 @@ const Text: FC<{ text: string; id: number }> = ({ text, id }) => {
         isDragging ? "opacity-30" : ""
       }`}
       ref={drag}
+      touch-action='none'
     >
       {text}
     </div>

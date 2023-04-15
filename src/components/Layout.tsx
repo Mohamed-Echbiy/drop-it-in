@@ -107,13 +107,13 @@ const Layout: FC = () => {
             </p>
           </>
         )}
-        {disable && (
+        {disable && inputValue && (
           <div className='w-screen h-screen top-0 left-0 fixed flex items-center justify-center'>
             <div
               className=' absolute top-0 left-0 bg-black opacity-60 w-full h-full cursor-pointer'
               onClick={() => setDisable(false)}
             ></div>
-            <Table rightCollection={rightArea} />
+            <Table rightCollection={rightArea} value={inputValue} />
           </div>
         )}
       </div>
